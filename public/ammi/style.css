@@ -1,0 +1,106 @@
+/* style.css */
+
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Estilo del título principal */
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilo del formulario y su contenedor */
+.form-container {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alinea el texto del formulario a la izquierda */
+}
+
+/* Estilo de los grupos de formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo de las etiquetas de los campos de entrada */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo de los campos de entrada */
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo de los botones del formulario */
+.form-buttons button {
+    padding: 10px 20px;
+    margin: 5px auto; /* Centra los botones horizontalmente */
+    display: block; /* Hace que los botones ocupen el ancho completo del contenedor */
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilo del botón de agregar */
+#addButton {
+    background: #5cb85c;
+}
+
+/* Estilo del botón de actualizar */
+#updateButton {
+    background: #f0ad4e;
+}
+
+/* Estilo del botón de cancelar */
+#cancelButton {
+    background: #d9534f;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilo de las celdas de encabezado y datos */
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilo de las celdas de encabezado */
+th {
+    background-color: #f4f4f4;
+}
+
+/* Estilo de la tabla en pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    /* Hace que la tabla sea más compacta en pantallas pequeñas */
+    th, td {
+        padding: 5px;
+    }
+
+    /* Ajusta el tamaño de las celdas de la tabla en pantallas pequeñas */
+    th, td::before {
+        font-size: 12px;
+    }
+
+    /* Centra los botones horizontalmente en pantallas pequeñas */
+    .form-buttons button {
+        margin: 5px auto;
+    }
+}

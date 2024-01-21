@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Torre de dulces</title>
+    <script src="https://threejs.org/build/three.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="explosion"></div>
+
+    <div class="loading-overlay" id="loadingOverlay">
+        <div>
+            <div class="spinner"></div>
+            <p>Generando producto...</p>
+        </div>
+    </div>
+    <!-- Resto del contenido de tu página aquí -->
+    
+    
+    <div id="menu">
+        <select id="cylinderSelector">
+            <option value="0">Cilindro 1</option>
+            <option value="1">Cilindro 2</option>
+            <option value="2">Cilindro 3</option>
+            <option value="3">Cilindro 4</option>
+            <option value="4">Cilindro 5</option>
+            <option value="5">Cilindro 6</option>
+            <option value="6">Cilindro 7</option>
+        </select>
+    </div>
+    <div id="sideMenu">
+        <ul>
+            <li id="cylinder-1" class="cylinder-dropdown">Nivel 1
+                <div class="dropdown-content" id="dropdown-1"></div>
+            </li>
+            <li id="cylinder-2" class="cylinder-dropdown">Nivel 2
+                <div class="dropdown-content" id="dropdown-2"></div>
+            </li>
+            <li id="cylinder-3" class="cylinder-dropdown">Nivel 3
+                <div class="dropdown-content" id="dropdown-3"></div>
+            </li>
+            <li id="cylinder-4" class="cylinder-dropdown">Nivel 4
+                <div class="dropdown-content" id="dropdown-4"></div>
+            </li>
+            <li id="cylinder-5" class="cylinder-dropdown">Nivel 5
+                <div class="dropdown-content" id="dropdown-5"></div>
+            </li>
+            <li id="cylinder-6" class="cylinder-dropdown">Nivel 6
+                <div class="dropdown-content" id="dropdown-6"></div>
+            </li>
+            <li id="cylinder-7" class="cylinder-dropdown">Nivel 7
+                <div class="dropdown-content" id="dropdown-7"></div>
+            </li>
+            <!-- Continúa con más cilindros según sea necesario -->
+        </ul>
+        <button id="VerBien">Ver completa</button>
+     
+
+       
+    </div>
+    
+   
+    <div id="productsContainer">
+        <div id="categoryContainer">
+            <label for="categoryDropdown">Seleccione una categoría:</label>
+            <select id="categoryDropdown">
+                <!-- Las opciones de categorías se cargarán dinámicamente aquí -->
+            </select>
+        </div>
+        <div id="products">
+            <!-- Los productos se cargarán dinámicamente aquí -->
+        </div>
+    </div>
+    
+    
+    <div id="priceSummary">
+        <!-- Aquí se mostrarán los precios y el total -->
+        <button id="checkoutButton">Proceder al Pago</button>
+     
+    </div>
+    <button id="continueButton" style="display: none;">Continuar con la compra</button>
+    
+
+    <script src="/client.js"></script>
+</body>
+</html>
